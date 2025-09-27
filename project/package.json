@@ -1,0 +1,34 @@
+{
+  "name": "tp2",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "backend": "copy-files-from-to && json-server --watch ./backend/db.json .js --delay 500 --routes ./backend/routes.json --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:unit": "vitest",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "axios": "^1.3.4",
+    "bootstrap": "^5.2.3",
+    "msw": "^1.2.1",
+    "vue": "^3.2.47",
+    "vue-loading-overlay": "^6.0.3",
+    "vue-router": "^4.1.6",
+    "vue-toast-notification": "^3.1.1"
+  },
+  "devDependencies": {
+    "@testing-library/vue": "^7.0.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/test-utils": "^2.3.0",
+    "copy-files-from-to": "^3.8.0",
+    "eslint": "^8.34.0",
+    "eslint-plugin-vue": "^9.9.0",
+    "jsdom": "^21.1.0",
+    "json-server": "^0.17.2",
+    "vite": "^4.1.4",
+    "vitest": "^0.29.1"
+  }
+}

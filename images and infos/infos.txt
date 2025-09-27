@@ -1,0 +1,2 @@
+This basic website simulates luck-based battles between Star Wars starships, keeping track of scores and 
+providing a scoreboard that ranks different players. It works with a basic backend and a database made of a json file.

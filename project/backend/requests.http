@@ -1,0 +1,30 @@
+### Accès au tableau de pointage 
+Get http://127.0.0.1:3000/ranking
+
+### Ajouter un joueur au tableau de pointage 
+Post http://127.0.0.1:3000/ranking
+content-type: application/json
+
+{
+    "name": "Murielle Ellemure",
+    "score": 600
+}
+
+### Voir tous les vaisseaux
+Get http://127.0.0.1:3000/ships
+
+### Accès au premier personnage
+Get http://127.0.0.1:3000/characters?_page=1&_limit=1
+
+### Accès au deuxième personnage 
+Get http://127.0.0.1:3000/characters?_page=2&_limit=1
+
+### Savoir combien il y a de personnages
+// Pour savoir combien il y a de personnages, simplement demander le premier et prendre
+// ensuite la valeur de la propriété X-Total-Count dans l'entête de la réponse. 
+// Exemple de code qui affiche la valeur de X-Total-Count :  
+//   const response = await axios.get(`http://localhost:3000/characters?_page=1&_limit=1`)
+//   console.log(response.headers['x-total-count'])
+Get http://127.0.0.1:3000/characters?_page=1&_limit=1
+
+
